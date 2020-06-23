@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GeoSoftware1 Assignment 6</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+
+
+</head>
+<body onload="onLoad()">
+  <link rel="stylesheet" href="/leaflet/leaflet.css"/>
+  <script src="javascripts/pointcloud.js"></script>
+  <script src="javascripts/point.js"></script>
+
+<!--NAVIGATION-->
+
+  <nav class="navbar navbar-expand-md navbar-default sticky-top">
+   <div class="container-fluid">
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="mainNav"></div>
+       <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+       </div>
+    </div>  
+  </nav>
+
+
+  <div class="a" align="center">
+  <h1>GeoSoftware1 Assignment 6</h1>
+
+  <div>
+    assignment: 06<br>
+    course: Geosoftware I SoSe 2020 <br>
+    author: Jonas Raabe <br> <br>
+
+    {{description pending}}
+  </div>
+  <div id="checkbox">
+  </div>
+
+  <a href="/create">Add More Points</a>
+
+  <br>
+  <div id="nextDepartures">
+    <p id="nextDeparturesHeader"></p>
+    <table style="width:100%" align="center" id="nextDeparturesTable">
+      <tr>
+        <th>line nr</th>
+        <th>Bus line</th>
+        <th>departure</th>
+      </tr>
+
+    </table>
+  </div>
+
+  <br>
+
+  <div id="mainMap"></div>
+
+  <br>
+
+  <table style="width:75%" align="center" id="resultTable">
+    <tr>
+      <th>Bus stop name</td>
+      <th>Coordinates</td>
+      <th>Distance (in meters)</td>
+      <th>Bearing</td>
+    </tr>
+  </table>
+
+  </div>
+  <br>
+
+  </div>
+
+  <footer id="footer">
+     <div class="container">
+        <div class="row">
+          <div class="col footer-contact">
+            <h4>Contact</h4>
+            <p> Name : Jonas Raabe<br>
+                Email : j_raab02@uni-muenster.de<br>
+            </p>
+          </div>
+        </div>
+      </div>
+  </footer>    
+            
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/leaflet/leaflet.js"></script>
+  <script src="leaflet-heat.js"></script>
+  <script src="javascripts/tokens.js"></script>
+  <script src="javascripts/script.js"></script>
+</body>
+</html>

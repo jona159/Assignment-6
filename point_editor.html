@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/leaflet/leaflet.css"/>
+    <link rel="stylesheet" href="/leaflet-draw/leaflet.draw.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/leaflet/leaflet.js"></script>
+    <script src="/leaflet-draw/leaflet.draw.js"></script>
+
+    
+
+
+    <title>Leaflet Draw plugin</title>
+</head>
+<body onload="deleteText()">
+    <a href="/">HOME</a>
+    <hr>
+    address search: <br>
+    <input id="addressSearch"></input>, Münster
+    <button class="button" type="button" onclick="searchAddress()">search address</button>
+    <br><br>
+
+    current position geojson: <br>
+    <button class="button" type="button" onclick="getLocation()">my geolocation</button>
+
+<p>With this function a point can be drawn on the map and as result the corresponding GeoJson is displayed on the right side.</p>
+<div id="main" style="overflow: auto;">
+    <div id="map" style="width: 600px; height: 400px; float: left;"></div>
+    <div id="data">
+        <textarea id="geojsontextarea" onchange="onChange()"></textarea><br />
+    </div>
+</div>
+<button onclick="save()">Save in MongoDB</button>
+<button onclick="getData()">Get Data saved in MongoDB</button>
+<button onclick="deleteAll()">Delete all Points saved in MongoDB</button>
+
+<button onclick="update()">Update the Point with ID</button>
+<button onclick="deleteOne()">Delete the Point with ID</button>
+ID: <textarea id="id" ></textarea>
+<script src="javascripts/tokens.js"></script>
+<script src="javascripts/point_editor.js"></script>
+<script src="javascripts/script.js"></script>
+</body>
+</html>
+
+
+
